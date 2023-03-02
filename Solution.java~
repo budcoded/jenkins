@@ -1,7 +1,0 @@
-class Solution {
-	public static void main (String[] args) {
-		System.out.println("Jenkins with git integration.");
-		System.out.println("Now checking if jenkins is being build when pushing the code into github.");
-		System.out.println("If this happens then ");
-	}
-}
