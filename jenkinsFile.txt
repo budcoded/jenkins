@@ -3,7 +3,9 @@ pipeline {
 	stages {
 		stage ('Clone Git') {
 			steps {
-				sh "git pull 'https://github.com/budcoded/jenkins.git'"
+				git url : 'https://github.com/budcoded/jenkins.git',
+				branch : 'main',
+				credentialsId : 'GitCredentials'
 			}
 		}
 		stage ('Build Code') {
